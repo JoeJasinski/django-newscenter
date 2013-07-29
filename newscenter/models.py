@@ -29,6 +29,11 @@ class Newsroom(models.Model):
     
     class Meta:
         ordering = ('name',)
+        if 'guardian' in settings.INSTALLED_APPS:
+            permissions = (
+                ('edit_articles', 'Edit Articles'),
+                ('add_articles', 'Add Articles'),
+            )
 
     def __unicode__(self):
         return u'%s' %(self.name)
