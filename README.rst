@@ -37,6 +37,8 @@ The following will be installed automatically if you use pip to install newscent
 For easy-thumbnails, you'll also need to syncdb or migrate, then add it to INSTALLED_APPS:
     'easy_thumbnails',
 
+If you would like to include django_guardian integration, install django_guardian via pip and add 'guardian' to INSTALLED_APPS.
+
 Template Tag
 ============
 
